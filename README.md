@@ -3,13 +3,15 @@
 ## SSDMNV2: Single Shot Multibox Detector and MobileNetV2
 Developed lightweight MobileNetV2 face mask detection model for identifying a person wearing a mask or not with an accuracy of 92.64% and f1 score of 0.93%.
 
-- Face mask detection had seen significant progress in the domains of Image processing and Computer vision, since the rise of the Covid-19 pandemic. 
-- Many face detection models have been created using several algorithms and techniques. 
-- The proposed approach in this project uses deep learning, TensorFlow, Keras, and OpenCV to detect face masks. 
-- This model can be used for safety purposes since it is very resource efficient to deploy. 
-- The SSDMNV2 approach uses Single Shot Multibox Detector as a face detector and MobilenetV2 architecture as a framework for the classifier, which is very lightweight and can - even be used in embedded devices (like NVIDIA Jetson Nano, Raspberry pi) to perform real-time mask detection. 
-- The technique deployed in this paper gives us an accuracy score of 0.9264 and an F1 score of 0.93. 
-- The dataset provided in this paper, was collected from various sources, can be used by other researchers for further advanced models such as those of face recognition, facial landmarks, and facial part detection process.
+## Demonstration of Project:
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/47279598/123558600-c7235a00-d7b4-11eb-876d-73d1ec19b1bf.gif" />
+</p>
+
+
+#### Link for Research Paper: https://www.sciencedirect.com/science/article/pii/S2210670720309070#bib0195
+#### Contributed in other researches: https://scholar.google.com/citations?user=73b_WZcAAAAJ&hl=en
+
 
 ## Table of Contents: 
 1. Abstract
@@ -17,11 +19,11 @@ Developed lightweight MobileNetV2 face mask detection model for identifying a pe
 3. Problem Statement
 4. Introduction
 5. Requirements
-6. Dataset
+6. Dataset Creation
 7. Generic Methodology
 8. Results
 9. Comparison with other model
-10. Conclusion
+10. Summary and Conclusion
 11. Limitations
 12. Future Scope
 13. Credits
@@ -79,17 +81,20 @@ The Jupyter Notebook software equipped with Python 3.8 kernel was selected in th
   - pandas https://pandas.pydata.org/docs/
   - TensorFlow https://www.tensorflow.org/api_docs
   - MobileNetV2 https://keras.io/api/applications/mobilenet/
+  - OpenCV https://docs.opencv.org/3.4/
   - scikit-learn https://scikit-learn.org/stable/user_guide.html
+  - keras https://keras.io/guides/
   - matplotlib https://matplotlib.org/stable/users/index.html
   - seaborn https://seaborn.pydata.org/tutorial.html
 
-## 5. Dataset Creation
-### Sources of Hindi Dataset Creation
-1. Kaggle's Medical Mask Dataset by Mikolaj Witkowski https://www.kaggle.com/mloey1/medical-face-mask-detection-dataset
-2. Prajna Bhandary dataset available at PyImageSearch https://www.pyimagesearch.com/2020/05/04/covid-19-face-mask-detector-with-opencv-keras-tensorflow-and-deep-learning/
-3. Masked face recognition dataset and application
+## 6. Dataset Creation
 
-The complete dataset is available @ https://github.com/TheSSJ2612/Real-Time-Medical-Mask-Detection/releases/download/v0.1/Dataset.zip
+### Sources of Hindi Dataset Creation
+1. Kaggle's Medical Mask Dataset by Mikolaj Witkowski: https://www.kaggle.com/mloey1/medical-face-mask-detection-dataset
+2. Prajna Bhandary dataset available at PyImageSearch: https://www.pyimagesearch.com/2020/05/04/covid-19-face-mask-detector-with-opencv-keras-tensorflow-and-deep-learning/
+3. Masked face recognition dataset and application: https://github.com/X-zhangyang/Real-World-Masked-Face-Dataset
+
+Link to Download Complete Dataset: https://github.com/TheSSJ2612/Real-Time-Medical-Mask-Detection/releases/download/v0.1/Dataset.zip
 
 ### Dataset Description
 <p align="center">
@@ -117,7 +122,7 @@ Figure 4: Dataset 25 images
   - 'with_mask' representing image with person wearing mask.
   - 'without_mask' representing image with person not wearing a mask.
 
-## 6. Generic Methodology
+## 7. Generic Methodology
 <p align="center">
   <img src="https://user-images.githubusercontent.com/47279598/123554245-abac5500-d79c-11eb-9d9e-dfc0df0ebc9b.png" />
 </p>
@@ -133,7 +138,9 @@ Figure 5: Data Pipeline
 - This approach helps in detecting faces in real-time, even on embedded devices like Raspberry Pi.
 - The following classifier uses a pre-trained model MobileNetV2 to predict whether the person is wearing a mask or not.
 
-## 7. Results
+## 8. Results
+
+### Confusion Matrix of SSDMNV2:
 <p align="center">
   <img src="https://user-images.githubusercontent.com/47279598/123554750-28403300-d79f-11eb-9b76-b1dbfacd92c4.png" />
 </p>
@@ -144,18 +151,21 @@ Figure 6: Heatmap Respresenting Confusion Matrix
 - The confusion matrix is plotted with help of heatmap showing two dimensional matrix data in graphical format.
 - It has successfully identified 941 true positives, 1103 true negatives, 2 false positive and 163 false negatives.
 
+### Training accuracy/loss curve on train and validation dataset
+
 <p align="center">
   <img src="https://user-images.githubusercontent.com/47279598/123554790-5faedf80-d79f-11eb-8f65-692e3e5d2589.png" />
 </p>
 <p align=center> 
-Figure 7: Training accuracy/loss on train and validation dataset
+Figure 7: Training accuracy/loss curve on train and validation dataset
 </p>
 
 - The plots are based on model accuracy/loss, the pyplot command style function that makes matplotlib work like Matlab.
 - In this figure the violet curve shows the training accuracy which is nearly equal to 98%, the grey curve represents training accuracy on the validation dataset.
 - Training loss where the red curve shows loss in training dataset less than 0.1, whereas the blue curve shows training loss on the validation dataset.
 
-## 7. Comparison of Results
+## 9. Comparison with other model
+
 <p align="center">
   <img src="https://user-images.githubusercontent.com/47279598/123554877-dea41800-d79f-11eb-900b-6babdc18ac1c.png" />
 </p>
@@ -163,8 +173,7 @@ Figure 7: Training accuracy/loss on train and validation dataset
 Figure 8: Comparison with other models
 </p>
 
-### The figure 8 represents our model performing best in f1 score.
-
+###  Comparison with other implementation
 <p align="center">
   <img src="https://user-images.githubusercontent.com/47279598/123554923-20cd5980-d7a0-11eb-9f21-2ecea38093cd.png" />
 </p>
@@ -172,31 +181,33 @@ Figure 8: Comparison with other models
 Figure 8: Comparison with other implementations
 </p>
 
-### The figure 8 represents predictions made by our model vs similar methodology used in prediction made by PyImageSearch
+#### The following figure 8 represents on the left predictions made by similar methodology used by PyImageSearchour model vs on the right predictions made by our SSDMNV2 model.
 
 
-## 8. Summary and Conclusion
-- Automatic fake news detection is a very promising area of research.
-- Due to drastic consequences detection of fake news becomes very significant. 
-- The Hindi dataset created can be a contribution to other research work. 
-- The project proposes a model that can easily absorb other features of news and has a very strong extensibility. 
-- B-LSTM was preferred since higher accuracies were achieved of about 95.01%.
+## 10. Summary and Conclusion
+- In our face mask detection model we successfully performed both the training and development of the image dataset which were divided into categories of people having masks and people not having masks.
+- We were able to classify our images accurately using MobileNetV2 image classifier which is one of the uniqueness of our model.
+- The technique of Object detection using OpenCV deep neural networks in our approach generated fruitful results.
+- The real time face detection model has an accuracy of 92.53% and produces a highest F1 score with 0.93.
+- A successfull research paper has been published in Elsivier journal in Sustainanble societ
 
 
-## 9. Limitations/ Challenges faced during the project
-- Lack of labelled data availability in Indian regional languages.
-- The amount of data on social media is massive but unlabeled and hence could not be used for training.
-- Also preprocessing of Hindi data was a challenge.
-- Due to above limitations remaining available dataset will lead to underfitting of the model.
+## 11. Limitations/ Challenges faced during the project
+- The collection of the labeled dataset was a problem because of the unavailability of the properly labeled dataset.
+- Preprocessing of data was a challenge since the dataset from Masked face recognition and application contained a lot of noise, and a lot of repetitions were present in the images of this dataset.
+- Finding these corrupt images was a tricky task, but due to valid efforts, we divided the work and cleaned the data set with mask images and without mask images.
+- Due to the non-availability of an adequate amount of data for training the proposed model, the method of data augmentation is used to solve this issue.
+- The results were analyzed before applying augmentation and after applying augmentation.
+- The time taken for training the model took a lot of time (~6 to 7 hours), which was enhanced with the help of the Nvidia GPU for faster processing and calculations.
 
-## 10. Future Scope
-- To increase the size of Hindi dataset and make it more robust.
-- Testing the model using URL to validate headlines and other parameters.
-- To make system adaptive to other languages and detect region specific biases.
-- To investigate new features to flag fake news.
+## 12. Future Scope
+- To increase the size of dataset and make it more robust.
+- To investigate new features to improve existing model.
+- Incorporating model into raspberry pi for real time identification.
+- Other researchers can use the dataset provided in this paper for further advanced models such as those of face recognition, facial landmarks, and facial part detection process.
 
-## 11. Credits: 
-Thanking my project teammates for always inspiring and motivating me throughout the journey.
+## 13. Credits: 
+Thanking my project teammates for caring and supporting me wholeheartedly. The role you played in my life is invaluable. I’m grateful for all of your help and continued support.
 <div class="align-text">
   <p>
    <p text-align= "justify"> Agam Madan : https://www.linkedin.com/in/agam-madan/  </p>   
@@ -204,5 +215,5 @@ Thanking my project teammates for always inspiring and motivating me throughout 
   </p>
 </div>
 
-## 12. License: 
+## 14. License: 
 - Apache License 2.0
