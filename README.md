@@ -11,7 +11,15 @@ Developed lightweight MobileNetV2 face mask detection model for identifying a pe
 
 #### Link for Research Paper: https://www.sciencedirect.com/science/article/pii/S2210670720309070#bib0195
 #### Contributed in other researches: https://scholar.google.com/citations?user=73b_WZcAAAAJ&hl=en
+#### Link to Download Complete Dataset: https://github.com/TheSSJ2612/Real-Time-Medical-Mask-Detection/releases/download/v0.1/Dataset.zip
 
+## How to use?
+1. Download the required files into a directory if your choice.
+2. Open required codes in Jupyter Notebook.  
+3. Install the dependencies as mentioned in code.
+4. Execute the code.
+5. Press 'q' to exit from real time video detection.
+6. Done
 
 ## Table of Contents: 
 1. Abstract
@@ -91,12 +99,11 @@ The Jupyter Notebook software equipped with Python 3.8 kernel was selected in th
 
 ### Sources of Hindi Dataset Creation
 1. Kaggle's Medical Mask Dataset by Mikolaj Witkowski: https://www.kaggle.com/mloey1/medical-face-mask-detection-dataset
-2. Prajna Bhandary dataset available at PyImageSearch: https://www.pyimagesearch.com/2020/05/04/covid-19-face-mask-detector-with-opencv-keras-tensorflow-and-deep-learning/
-3. Masked face recognition dataset and application: https://github.com/X-zhangyang/Real-World-Masked-Face-Dataset
-
-Link to Download Complete Dataset: https://github.com/TheSSJ2612/Real-Time-Medical-Mask-Detection/releases/download/v0.1/Dataset.zip
+2. Masked face recognition dataset and application: https://github.com/X-zhangyang/Real-World-Masked-Face-Dataset
+3. Prajna Bhandary dataset available at PyImageSearch: https://www.pyimagesearch.com/2020/05/04/covid-19-face-mask-detector-with-opencv-keras-tensorflow-and-deep-learning/
 
 ### Dataset Description
+
 <p align="center">
   <img src="https://user-images.githubusercontent.com/47279598/123553442-d2688c80-d798-11eb-9752-35c3f5031a7d.png"/>
 </p>
