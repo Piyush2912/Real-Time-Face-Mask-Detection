@@ -111,7 +111,7 @@ Figure 4: Dataset 25 images
 
 ## 6. Generic Methodology
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/47279598/123553574-9550ca00-d799-11eb-8123-38f1d286ef7c.png" />
+  <img src="https://user-images.githubusercontent.com/47279598/123554129-448ea080-d79c-11eb-9906-1ad4f0ffc552.png" />
 </p>
 <p align=center> 
 Figure 5: Flow Diagram of the SSDMNV2 model
@@ -121,11 +121,27 @@ Figure 5: Flow Diagram of the SSDMNV2 model
 
 ## 7. Comparison of Results
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/47279598/123104184-5d255080-d454-11eb-948d-11dc323a1714.png" />
+  <img src="https://user-images.githubusercontent.com/47279598/123553932-68051b80-d79b-11eb-8f89-615111b84cba.png" />
+</p>
+<p align=center> 
+Figure 6: Comparison of accuracy between different models
 </p>
 
-- The following table represents comparison of result after evaluating with different machine learning and deep learning algorithms.
-- It can be noted that B-LSTM (Bidirectional Long Short Term Memory) algorithm as compared with other algorithms gave the best results with an accuracy of 95.01% and precision of 90%.
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/47279598/123554027-cfbb6680-d79b-11eb-8800-0e0543be3891.png" />
+</p>
+<p align=center> 
+Figure 7: Comparison of F1 Score between different models
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/47279598/123553994-aef31100-d79b-11eb-94a8-201ca02c749d.png" />
+</p>
+<p align=center> 
+Figure 8: Comparison of Performance between different models using FPS parameter
+</p>
+
+In the end, MobileNetV2 was chosen to be our model for the proposed approach since it outperforms other models in F1-score and Average performance. This makes the proposed approach easy to deploy in real-time even on embedded devices which is not possible with heavy models and to do real-time detection using these models requires good computational power which might make it difficult to play in real life.
 
 ### Architecture used in our model
 <p align="center">
