@@ -200,8 +200,7 @@ Thanking my project teammates for always inspiring and motivating me throughout 
 <div class="align-text">
   <p>
     <p text-align= "justify"> Rohan Arora : https://www.linkedin.com/in/rohanarora18/  </p> 
-    <img src="https://user-images.githubusercontent.com/47279598/123132503-70441a80-d46c-11eb-9157-47d93081864d.png" align="justfy" width="250" height="250"/>
- 
+    <p text-align= "justify"> Agam Madan : https://www.linkedin.com/in/agam-madan/  </p> 
   </p>
 </div>
 
