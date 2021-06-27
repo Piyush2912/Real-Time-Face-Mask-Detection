@@ -122,17 +122,57 @@ Figure 4: Dataset 25 images
   <img src="https://user-images.githubusercontent.com/47279598/123554245-abac5500-d79c-11eb-9d9e-dfc0df0ebc9b.png" />
 </p>
 <p align=center> 
-Figure 5: Flow Diagram of the SSDMNV2 model
+Figure 5: Data Pipeline
 </p>
 
 - The following figure 5 represents sequential steps performed in order to reach to end goal.
+- To predict whether a person has worn a mask correctly, the initial stage would be to train the model using a proper dataset.
+- After training the classifier, an accurate face detection model is required to detect faces, so that the SSDMNV2 model can classify whether the person is wearing a mask or not.
+- The task in this project is to raise the accuracy of mask detection without being too resource-heavy.
+- For doing this task, the DNN module was used from OpenCV, which contains a ‘Single Shot Multibox Detector’ (SSD) object detection model with ResNet-10 as its backbone architecture.
+- This approach helps in detecting faces in real-time, even on embedded devices like Raspberry Pi.
+- The following classifier uses a pre-trained model MobileNetV2 to predict whether the person is wearing a mask or not.
+
+## 7. Results
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/47279598/123554750-28403300-d79f-11eb-9b76-b1dbfacd92c4.png" />
+</p>
+<p align=center> 
+Figure 6: Heatmap Respresenting Confusion Matrix
+</p>
+
+- The confusion matrix is plotted with help of heatmap showing two dimensional matrix data in graphical format.
+- It has successfully identified 941 true positives, 1103 true negatives, 2 false positive and 163 false negatives.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/47279598/123554790-5faedf80-d79f-11eb-8f65-692e3e5d2589.png" />
+</p>
+<p align=center> 
+Figure 7: Training accuracy/loss on train and validation dataset
+</p>
+
+- The plots are based on model accuracy/loss, the pyplot command style function that makes matplotlib work like Matlab.
+- In this figure the violet curve shows the training accuracy which is nearly equal to 98%, the grey curve represents training accuracy on the validation dataset.
+- Training loss where the red curve shows loss in training dataset less than 0.1, whereas the blue curve shows training loss on the validation dataset.
 
 ## 7. Comparison of Results
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/47279598/123554877-dea41800-d79f-11eb-900b-6babdc18ac1c.png" />
+</p>
+<p align=center> 
+Figure 8: Comparison with other models
+</p>
 
+### The figure 8 represents our model performing best in f1 score.
 
-### Architecture used in our model
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/47279598/123554923-20cd5980-d7a0-11eb-9f21-2ecea38093cd.png" />
+</p>
+<p align=center> 
+Figure 8: Comparison with other implementations
+</p>
 
-### Example of B-LSTM:
+### The figure 8 represents predictions made by our model vs similar methodology used in prediction made by PyImageSearch
 
 
 ## 8. Summary and Conclusion
@@ -161,10 +201,7 @@ Thanking my project teammates for always inspiring and motivating me throughout 
   <p>
     <p text-align= "justify"> Rohan Arora : https://www.linkedin.com/in/rohanarora18/  </p> 
     <img src="https://user-images.githubusercontent.com/47279598/123132503-70441a80-d46c-11eb-9157-47d93081864d.png" align="justfy" width="250" height="250"/>
-    <p text-align= "justify"> Shreya Dhingra https://www.linkedin.com/in/shreya-dhingra-927b19190 </p>  
-    <img src="https://user-images.githubusercontent.com/47279598/123132674-9c5f9b80-d46c-11eb-9e0e-5c7d716fb811.png" align="justify" width="250" height="250"/>
-    <p text-align= "justify"> Adarsh Kumar https://www.linkedin.com/in/adarsh-kumar-5b1a1719b </p>  
-    <img src="https://user-images.githubusercontent.com/47279598/123133053-fc564200-d46c-11eb-8b87-cea10612aee1.png" align="justfy" width="250" height="250"/>
+ 
   </p>
 </div>
 
