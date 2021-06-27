@@ -199,8 +199,8 @@ Figure 8: Comparison with other implementations
 Thanking my project teammates for always inspiring and motivating me throughout the journey.
 <div class="align-text">
   <p>
-    <p text-align= "justify"> Rohan Arora : https://www.linkedin.com/in/rohanarora18/  </p> 
-    <p text-align= "justify"> Agam Madan : https://www.linkedin.com/in/agam-madan/  </p> 
+   <p text-align= "justify"> Agam Madan : https://www.linkedin.com/in/agam-madan/  </p>   
+   <p text-align= "justify"> Rohan Arora : https://www.linkedin.com/in/rohanarora18/  </p> 
   </p>
 </div>
 
