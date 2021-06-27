@@ -9,9 +9,9 @@ Developed lightweight MobileNetV2 face mask detection model for identifying a pe
 </p>
 
 
-#### Link for Research Paper: https://www.sciencedirect.com/science/article/pii/S2210670720309070#bib0195
-#### Contributed in other researches: https://scholar.google.com/citations?user=73b_WZcAAAAJ&hl=en
-#### Link to Download Complete Dataset: https://github.com/TheSSJ2612/Real-Time-Medical-Mask-Detection/releases/download/v0.1/Dataset.zip
+### Link for Research Paper: https://www.sciencedirect.com/science/article/pii/S2210670720309070#bib0195
+### Contributed in other researches: https://scholar.google.com/citations?user=73b_WZcAAAAJ&hl=en
+### Link to Download Complete Dataset: https://github.com/TheSSJ2612/Real-Time-Medical-Mask-Detection/releases/download/v0.1/Dataset.zip
 
 ## How to use?
 1. Download the required files into a directory if your choice.
