@@ -87,6 +87,7 @@ The complete dataset is available @ https://github.com/TheSSJ2612/Real-Time-Medi
 - The data set consist of 11,042 total images out of which 80 percent of images used for training  data set, and the rest 20 percent have been used for testing.
 - The following figure 3 shows the bar graph which represents equal 5521 images distribution between two classes, with_mask  and without_mask.
 - This accounts for approximately 8,833 images and 2,209 images, which have been used for training and testing respectively. 
+- There is equal distribution of dataset.
 <p align="center">
   <img src="https://user-images.githubusercontent.com/47279598/123411075-ab119400-d5cd-11eb-99de-bc54597beae5.png" />
 </p>
@@ -95,24 +96,16 @@ Figure 3: Bar graph with class:
 "with mask" and "without mask"
 </p>
 
-
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/47279598/123099762-1cc3d380-d450-11eb-9ee2-a72e8155d8b5.png" />
+  <img src="https://user-images.githubusercontent.com/47279598/123553223-908b1680-d797-11eb-89f3-9fe95d48bb9e.png" />
+</p>
+<p align=center> 
+Figure 4: Dataset 25 images
 </p>
 
-- The following figure shows dataset description as follows:
-  - 'id' representing unique numberical value.
-  - 'title' representing hindi news headline in newspaper.
-  - 'text' representing body text under the hindi news article.
-  - 'author' representing the author/writer of that news article.
-  - 'label' indicating numeric value '0' for fake news and '1' for true news.
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/47279598/123100032-5eed1500-d450-11eb-9191-dab860481c7e.png" />
-</p>
-
-- There is equal distribution of dataset.
-- The following figure shows the bar graph which represents a total of 24,000 news articles distribution between two classes, fake news and real news.
+- The following figure 4 shows dataset description as follows:
+  - 'with_mask' representing image with person wearing mask.
+  - 'without_mask' representing image with person not wearing a mask.
 
 ## 6. Generic Methodology
 <p align="center">
