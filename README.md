@@ -73,14 +73,15 @@ The Jupyter Notebook software equipped with Python 3.8 kernel was selected in th
   - MobileNetV2 https://keras.io/api/applications/mobilenet/
   - scikit-learn https://scikit-learn.org/stable/user_guide.html
   - matplotlib https://matplotlib.org/stable/users/index.html
-  - 
   - seaborn https://seaborn.pydata.org/tutorial.html
 
 ## 5. Dataset Creation
 ### Sources of Hindi Dataset Creation
-1. Danik Bhaskar      www.bhaskar.com/
-2. Hindustan Times    www.hindustantimes.com/
-3. Dainik Jagran      www.jagran.com/
+1. Kaggle's Medical Mask Dataset by Mikolaj Witkowski https://www.kaggle.com/mloey1/medical-face-mask-detection-dataset
+2. Prajna Bhandary dataset available at PyImageSearch https://www.pyimagesearch.com/2020/05/04/covid-19-face-mask-detector-with-opencv-keras-tensorflow-and-deep-learning/
+3. Masked face recognition dataset and application
+
+The complete dataset is available @ https://github.com/TheSSJ2612/Real-Time-Medical-Mask-Detection/releases/download/v0.1/Dataset.zip
 
 ### Dataset Description
 - The data set consist of 11,042 total images out of which 80 percent of images used for training  data set, and the rest 20 percent have been used for testing.
