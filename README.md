@@ -3,6 +3,14 @@
 ## SSDMNV2: Single Shot Multibox Detector and MobileNetV2
 Developed lightweight MobileNetV2 face mask detection model for identifying a person wearing a mask or not with an accuracy of 92.64% and f1 score of 0.93%.
 
+- Face mask detection had seen significant progress in the domains of Image processing and Computer vision, since the rise of the Covid-19 pandemic. 
+- Many face detection models have been created using several algorithms and techniques. 
+- The proposed approach in this project uses deep learning, TensorFlow, Keras, and OpenCV to detect face masks. 
+- This model can be used for safety purposes since it is very resource efficient to deploy. 
+- The SSDMNV2 approach uses Single Shot Multibox Detector as a face detector and MobilenetV2 architecture as a framework for the classifier, which is very lightweight and can - even be used in embedded devices (like NVIDIA Jetson Nano, Raspberry pi) to perform real-time mask detection. 
+- The technique deployed in this paper gives us an accuracy score of 0.9264 and an F1 score of 0.93. 
+- The dataset provided in this paper, was collected from various sources, can be used by other researchers for further advanced models such as those of face recognition, facial landmarks, and facial part detection process.
+
 ## Table of Contents: 
 1. Abstract
 2. Motivation
@@ -97,7 +105,6 @@ Figure 3: Bar graph with class:
 - This accounts for approximately 8,833 images and 2,209 images, which have been used for training and testing respectively. 
 - There is equal distribution of dataset.
 
-
 <p align="center">
   <img src="https://user-images.githubusercontent.com/47279598/123553223-908b1680-d797-11eb-89f3-9fe95d48bb9e.png" />
 </p>
@@ -105,61 +112,28 @@ Figure 3: Bar graph with class:
 Figure 4: Dataset 25 images
 </p>
 
+- The figure 4 represents 25 images choosen at random from complete dataset. 
 - The following figure 4 shows dataset description as follows:
   - 'with_mask' representing image with person wearing mask.
   - 'without_mask' representing image with person not wearing a mask.
 
 ## 6. Generic Methodology
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/47279598/123554129-448ea080-d79c-11eb-9906-1ad4f0ffc552.png" />
+  <img src="https://user-images.githubusercontent.com/47279598/123554245-abac5500-d79c-11eb-9d9e-dfc0df0ebc9b.png" />
 </p>
 <p align=center> 
 Figure 5: Flow Diagram of the SSDMNV2 model
 </p>
 
-- The following figure represents sequential steps performed in order to reach to end goal.
+- The following figure 5 represents sequential steps performed in order to reach to end goal.
 
 ## 7. Comparison of Results
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/47279598/123553932-68051b80-d79b-11eb-8f89-615111b84cba.png" />
-</p>
-<p align=center> 
-Figure 6: Comparison of accuracy between different models
-</p>
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/47279598/123554027-cfbb6680-d79b-11eb-8800-0e0543be3891.png" />
-</p>
-<p align=center> 
-Figure 7: Comparison of F1 Score between different models
-</p>
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/47279598/123553994-aef31100-d79b-11eb-94a8-201ca02c749d.png" />
-</p>
-<p align=center> 
-Figure 8: Comparison of Performance between different models using FPS parameter
-</p>
-
-In the end, MobileNetV2 was chosen to be our model for the proposed approach since it outperforms other models in F1-score and Average performance. This makes the proposed approach easy to deploy in real-time even on embedded devices which is not possible with heavy models and to do real-time detection using these models requires good computational power which might make it difficult to play in real life.
 
 ### Architecture used in our model
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/47279598/123116562-a37fad00-d45e-11eb-9b8e-db4e85dfb1d7.png" />
-</p>
-<p align="center">
-  Bidirectional LSTM Architecture retrieved from https://paperswithcode.com/method/bilstm
-</p>
 
-- It is a two way process.
-- A Bidirectional LSTM is a sequence processing model that consists of two LSTMs: one taking the input in a forward direction, and the other in a backwards direction. 
 ### Example of B-LSTM:
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/47279598/123117182-299bf380-d45f-11eb-8ee4-b278f5c8d8b8.png" width="800" height="400" />
-</p>
 
-- The LSTM model reads the input text in one direction from left to right.
-- The B-LSTM model reads the input text from both directions from left to right and right to left.
 
 ## 8. Summary and Conclusion
 - Automatic fake news detection is a very promising area of research.
