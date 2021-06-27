@@ -84,17 +84,19 @@ The Jupyter Notebook software equipped with Python 3.8 kernel was selected in th
 The complete dataset is available @ https://github.com/TheSSJ2612/Real-Time-Medical-Mask-Detection/releases/download/v0.1/Dataset.zip
 
 ### Dataset Description
-- The data set consist of 11,042 total images out of which 80 percent of images used for training  data set, and the rest 20 percent have been used for testing.
-- The following figure 3 shows the bar graph which represents equal 5521 images distribution between two classes, with_mask  and without_mask.
-- This accounts for approximately 8,833 images and 2,209 images, which have been used for training and testing respectively. 
-- There is equal distribution of dataset.
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/47279598/123411075-ab119400-d5cd-11eb-99de-bc54597beae5.png" />
+  <img src="https://user-images.githubusercontent.com/47279598/123553442-d2688c80-d798-11eb-9752-35c3f5031a7d.png"/>
 </p>
 <p align=center> 
 Figure 3: Bar graph with class: 
 "with mask" and "without mask"
 </p>
+
+- The data set consist of 11,042 total images out of which 80 percent of images used for training  data set, and the rest 20 percent have been used for testing.
+- The following figure 3 shows the bar graph which represents equal 5521 images distribution between two classes, with_mask  and without_mask.
+- This accounts for approximately 8,833 images and 2,209 images, which have been used for training and testing respectively. 
+- There is equal distribution of dataset.
+
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/47279598/123553223-908b1680-d797-11eb-89f3-9fe95d48bb9e.png" />
@@ -109,7 +111,10 @@ Figure 4: Dataset 25 images
 
 ## 6. Generic Methodology
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/47279598/123103198-682bb100-d453-11eb-902e-1916932993e8.png" />
+  <img src="https://user-images.githubusercontent.com/47279598/123553574-9550ca00-d799-11eb-8123-38f1d286ef7c.png" />
+</p>
+<p align=center> 
+Figure 5: Flow Diagram of the SSDMNV2 model
 </p>
 
 - The following figure represents sequential steps performed in order to reach to end goal.
