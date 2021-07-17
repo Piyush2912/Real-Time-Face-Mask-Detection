@@ -22,20 +22,20 @@ Developed lightweight MobileNetV2 face mask detection model for identifying a pe
 6. Done
 
 ## Table of Contents: 
-1. Abstract
-2. Motivation
-3. Problem Statement
-4. Introduction
-5. Requirements
-6. Dataset Creation
-7. Generic Methodology
-8. Results
-9. Comparison with other model
-10. Summary and Conclusion
-11. Limitations
-12. Future Scope
-13. Credits
-14. License
+1. [Abstract](https://github.com/Piyush2912/Real-Time-Face-Mask-Detection#1-abstract)
+2. [Motivation](https://github.com/Piyush2912/Real-Time-Face-Mask-Detection#2-motivation)
+3. [Problem Statement](https://github.com/Piyush2912/Real-Time-Face-Mask-Detection#3-problem-statement)
+4. [Introduction](https://github.com/Piyush2912/Real-Time-Face-Mask-Detection#4-introduction)
+5. [Requirements](https://github.com/Piyush2912/Real-Time-Face-Mask-Detection#5-requirements)
+6. [Dataset Creation](https://github.com/Piyush2912/Real-Time-Face-Mask-Detection#6-dataset-creation)
+7. [Generic Methodology](https://github.com/Piyush2912/Real-Time-Face-Mask-Detection#7-generic-methodology)
+8. [Results](https://github.com/Piyush2912/Real-Time-Face-Mask-Detection#8-results)
+9. [Comparison with other model](https://github.com/Piyush2912/Real-Time-Face-Mask-Detection#9-comparison-with-other-model)
+10. [Summary and Conclusion](https://github.com/Piyush2912/Real-Time-Face-Mask-Detection#10-summary-and-conclusion)
+11. [Limitations](https://github.com/Piyush2912/Real-Time-Face-Mask-Detection#11-limitations-challenges-faced-during-the-project)
+12. [Future Scope](https://github.com/Piyush2912/Real-Time-Face-Mask-Detection#12-future-scope)
+13. [Credits](https://github.com/Piyush2912/Real-Time-Face-Mask-Detection#13-credits)
+14. [License](https://github.com/Piyush2912/Real-Time-Face-Mask-Detection#14-license)
 
 ## 1. Abstract
 - This project is concerned with the detection of face masks.
